@@ -1,0 +1,41 @@
+body {
+	width: 100%;
+	// max-width: 1250px;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	// max-width: 1250px;
+}
+
+#nav {
+
+}
+
+#nav img {
+	max-width: 240px;
+}
+
+#hero {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+#hero img { 
+	max-width: 1250px; 
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+
+#footer {
+	width: 100%;
+	// max-width: 1250px;
+	height: 170px;
+	background-color: #144053;
+}
