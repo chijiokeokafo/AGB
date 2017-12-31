@@ -23,7 +23,6 @@ a {
 	height: 155px; 
 	display: flex;
 	justify-content: space-between;
-
 }
 #nav img {
 	width: 215px;
@@ -46,14 +45,8 @@ a {
 	text-decoration: none;
 }
 
-.nav-toggle {
+i#mobile-nav-button {
   display: none;
-  position: absolute;
-  top: 5px;
-  right: 55px;
-  color: black;
-  font-size: 2em;
-  cursor: pointer;
 }
 
 #hero { width: 100%; }
@@ -62,6 +55,7 @@ a {
 	width: 100%;
 	display: block;
 }
+#hero img.mobile-hero { display: none; }
 
 #contact { background-color: #cad1d4;}
 .contact-container {
@@ -188,11 +182,47 @@ span.letter { color: #abb5b9; }
 }
 
 @media only screen and (max-width: 750px) {
+
+	#nav { 
+		height: auto; 
+		display: block;
+	}
+	#nav .nav-container {
+		position: absolute;
+		display: block;
+	    margin: 10px;
+	    z-index: 1000;
+	    top: 0;
+	    left: 100%;
+	    padding: 0;
+	    height: 100vh;
+	    background-color: rgba(255, 255, 255, 0.9);
+	    width: 100vw;
+	    transition: all 0.25s ease-in;
+	}
+	#nav img {
+	    margin: 20px auto;
+	    display: block;
+		width: 250px;
+	}
+
+	i#mobile-nav-button {
+	  display: block;
+	  text-align: left;
+	  padding: 0 0px 20px 20px;
+	  font-size: 200%;
+	}
+
+	.nav-open { left: 50%; }
+	
+	#hero img.desktop-hero { display: none; }
+	#hero img.mobile-hero { display: block; }
+
 	.contact-container { 
 		width: 90%; 
 		display: block;
 		margin: 0 auto;
-		padding: 10px 0 0 0;
+		padding: 5px 0 0 0;
 	}
 
 	.contact-container > h1,
@@ -202,7 +232,9 @@ span.letter { color: #abb5b9; }
 		text-align: left;
 		margin: 0;
 		padding-bottom: 10px;
+		font-size: 84%;
 	} 
+	.contact-container i { margin: 0px 5px 0px 0px; }
 
 
 	h1.heading {
