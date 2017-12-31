@@ -194,11 +194,16 @@ span.letter { color: #abb5b9; }
 	    z-index: 1000;
 	    top: 0;
 	    left: 100%;
-	    padding: 0;
-	    height: 180px;
-	    background-color: rgba(255, 255, 255, 0.9);
+	    padding: 10px 0;
+	    height: 166px;
+	    background-color: #cad1d4;
 	    width: 100vw;
 	    transition: all 0.25s ease-in;
+	}
+	.nav-container li {
+		height: 19%;
+		padding-top: 13px; 
+		border-bottom: 1px solid #144053;
 	}
 	#nav img {
 	    margin: 20px auto;
