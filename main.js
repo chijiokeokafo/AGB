@@ -14,9 +14,7 @@ $(document).ready(function(){
           scrollTop: $(section).offset().top
       });
 
-      $(".nav-container").css({
-      	"left" : "100%"
-      })
+      $(".nav-container").toggleClass("nav-open");
   });
 
 });

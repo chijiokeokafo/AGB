@@ -187,7 +187,7 @@ span.letter { color: #abb5b9; }
 		height: auto; 
 		display: block;
 	}
-	#nav .nav-container {
+	.nav-container {
 		position: absolute;
 		display: block;
 	    margin: 10px;
@@ -195,7 +195,7 @@ span.letter { color: #abb5b9; }
 	    top: 0;
 	    left: 100%;
 	    padding: 0;
-	    height: 100vh;
+	    height: 180px;
 	    background-color: rgba(255, 255, 255, 0.9);
 	    width: 100vw;
 	    transition: all 0.25s ease-in;
@@ -213,7 +213,7 @@ span.letter { color: #abb5b9; }
 	  font-size: 200%;
 	}
 
-	.nav-open { left: 50%; }
+	.nav-open { left: 15%; }
 	
 	#hero img.desktop-hero { display: none; }
 	#hero img.mobile-hero { display: block; }
