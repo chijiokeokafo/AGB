@@ -107,8 +107,10 @@ h1.heading {
 
 
 .lawyer-details {
+    width: 34%;
 	display: flex;
 	flex-direction: row;
+	// align-items: flex-start;
 	padding-top: 20px;
 }
 .lawyer-details p { margin: 15px; }
@@ -185,7 +187,7 @@ span.letter { color: #abb5b9; }
 
 	.lawyer-details { padding-top: 10px; }
 
-	
+
 }
 
 
