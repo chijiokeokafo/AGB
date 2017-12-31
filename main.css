@@ -186,11 +186,11 @@ span.letter { color: #abb5b9; }
 	.lawyers-container h1 { font-size: 25px; }
 
 	.lawyer-details { padding-top: 10px; }
-
-
 }
 
-
+@media only screen and (max-width: 450px) {
+	
+}
 
 
 
