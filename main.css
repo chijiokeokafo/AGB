@@ -28,11 +28,10 @@ a {
 	width: 215px;
 	margin: 30px 50px;
 }
-
 .nav-container {
 	// align-self: flex-end;
 	list-style: none;
-	margin: 60px 50px 0px 0px;
+	margin: 60px 50px 0 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end ;
@@ -44,8 +43,7 @@ a {
 	color: #144053;
 	text-decoration: none;
 }
-
-i#mobile-nav-button {
+#mobile-nav-button {
   display: none;
 }
 
@@ -64,7 +62,7 @@ i#mobile-nav-button {
 	flex-direction: row;
 	justify-content: space-between;
 	color: #144053;
-	padding: 0px 80px;
+	padding: 0 80px;
 	width: 60%;
 }
 .contact-container h1 { 
@@ -98,8 +96,6 @@ h1.heading {
 	display: flex;
 	justify-content: space-between;
 }
-
-
 .lawyer-details {
     width: 39%;
 	display: flex;
@@ -108,13 +104,9 @@ h1.heading {
 	padding-top: 20px;
 }
 .lawyer-details p { margin: 15px; }
-
 span.letter { color: #abb5b9; }
 .lawyers-container hr { color: #cad1d4; }
 .lawyer.last { margin-bottom: 60px; }
-
-
-
 
 #footer {
 	position: relative;
@@ -164,9 +156,6 @@ span.letter { color: #abb5b9; }
     } 
     .footer-top p.desktop { display: none; }
     .footer-top p.mobile { display: block; }
-
-
-
     .footer-bottom {
         width: 600px;
     }
@@ -183,21 +172,25 @@ span.letter { color: #abb5b9; }
 
 @media only screen and (max-width: 750px) {
 
+	html { overflow-x: hidden; }
+
 	#nav { 
 		height: auto; 
 		display: block;
 	}
 	.nav-container {
-		position: absolute;
-		display: block;
-	    margin: 10px;
-	    z-index: 1000;
-	    top: 0;
-	    left: 100%;
-	    padding: 10px 0;
-	    height: 166px;
-	    background-color: #cad1d4;
-	    width: 100vw;
+	    position: absolute;
+        display: block;
+        margin: 0 0px 10px 10px;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        padding: 10px 0;
+        height: 181px;
+        background-color: #cad1d4;
+        width: 0px;
+        opacity: 1;
+        overflow-x: hidden;
 	    transition: all 0.25s ease-in;
 	}
 	.nav-container li {
@@ -210,15 +203,13 @@ span.letter { color: #abb5b9; }
 	    display: block;
 		width: 250px;
 	}
-
-	i#mobile-nav-button {
+	div#mobile-nav-button {
 	  display: block;
 	  text-align: left;
 	  padding: 0 0px 20px 20px;
 	  font-size: 200%;
 	}
-
-	.nav-open { left: 15%; }
+	.nav-open { width: 360px; }
 	
 	#hero img.desktop-hero { display: none; }
 	#hero img.mobile-hero { display: block; }
@@ -229,9 +220,8 @@ span.letter { color: #abb5b9; }
 		margin: 0 auto;
 		padding: 5px 0 0 0;
 	}
-
 	.contact-container > h1,
-	.contact-container > p {
+	.contact-container > a p {
 		display: block;
 		margin: 0 auto;
 		text-align: left;
@@ -239,7 +229,7 @@ span.letter { color: #abb5b9; }
 		padding-bottom: 10px;
 		font-size: 84%;
 	} 
-	.contact-container i { margin: 0px 5px 0px 0px; }
+	.contact-container i { margin: 0 5px 0 0; }
 
 
 	h1.heading {
@@ -248,32 +238,28 @@ span.letter { color: #abb5b9; }
 	}
 
 	.lawyers-container h1 { 
-		margin-left: 0px;
-		margin-bottom: 0px;
+		margin-left: 0;
+		margin-bottom: 0;
 		font-size: 26px; 
 		max-width: 300px;
 	}
-
 	.lawyer,
 	.lawyer-details { display: block; }
 
 	#footer { height: 250px; }
-
 	.footer-top,
 	.footer-bottom {  }
 	.footer-top { 
 		margin: 0 auto;
 		width: 90%;
 	}
-
 	.footer-bottom { 
 		display: block;
 		width: 90%; 
 		margin-top: 40px;
 	}
-
 	.footer-bottom p {
-		margin: 5px 0px;
+		margin: 5px 0;
 		font-size: 78%;
 		letter-spacing: 1px;
 	}

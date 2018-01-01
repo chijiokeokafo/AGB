@@ -3,8 +3,8 @@ $(document).ready(function(){
   
 
   $("#mobile-nav-button").click(function(e) {
-      // alert('meee');
       $(".nav-container").toggleClass("nav-open");
+      
   });
 
   $("ul.nav-container").find("a").click(function(e) {
