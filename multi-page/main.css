@@ -29,6 +29,13 @@ a {
 	width: 215px;
 	margin: 30px 50px;
 }
+#nav .nav-container img {
+	width: 20px;
+	position: absolute;
+	margin: 0;
+	top: 20px;
+	left: 90%;
+}
 .nav-container {
 	/*align-self: flex-end;*/
 	list-style: none;
@@ -74,12 +81,51 @@ a {
 
 #hero { width: 100%; }
 
-#hero img { 
+/*#hero img { 
 	width: 100%;
 	display: block;
 }
-#hero img.mobile-hero { display: none; }
-
+#hero img.mobile-hero { display: none; }*/
+#hero .item.one {
+	background: url("images/hero-desktop-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#hero .item.two {
+	background: url("images/hero-desktop-2.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#hero .item.three {
+	background: url("images/hero-desktop-3.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#hero .item {
+	height: 437px;
+	font-family: 'Lato';
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	padding-left: 10%;
+}
+#hero .item h1 {
+	font-size: 74px;
+	font-weight: 400;
+	color: #fff;
+	margin: 0;
+}
+#hero .item p {
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
 
 
 /*HOMEPAGE*/
@@ -107,8 +153,10 @@ a {
 	color: #4e5050;
 	line-height: 28px;
 	letter-spacing: 1px;
-	
 }
+#home-main .home-paragraph p {
+ 	margin: 30px 0;
+ }
 
 .three-block {
 	width: 80%;
@@ -123,12 +171,20 @@ a {
 .block {
 	width: 33%;
 	box-sizing: border-box;
-	margin: 10px 30px;
+	margin: 10px 0;
 	background-color: #fff;
 	height: 200px;
 	position: relative;
 }
-
+.block.middle {
+	margin: 10px 30px;
+}
+.block h1 {
+	text-align: left;
+	padding: 30px;
+	font-weight: 500 !important;
+	font-size: 40px !important;
+}
 .block a {
 	width: 100%;
 	position: absolute;
@@ -141,110 +197,91 @@ a {
 
 }
 
+/*ABOUT PAGE*/
 
+.about #hero {
+	background-color: #154154;
+	padding: 40px 100px;
+}
+.about #hero h1 {
+	color: #fff;
+	font-size: 74px;
+	font-weight: 100;
+	margin: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#contact { background-color: #cad1d4;}
-.contact-container {
-	background-color: #cad1d4;
+.gallery-row {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	color: #144053;
-	padding: 0 80px;
-	width: 60%;
+	justify-content: center;
+	width: 80%;
+	margin: 30px auto 0;
 }
-.contact-container h1 { 
-	font-size: 25px; 
-	font-weight: 100;
+.gallery-row img { 
+	width: 25%; 
+	cursor: pointer;
 }
-.contact-container p {
-	font-size: 19px;
-	font-weight: 100;
-	padding-top: 4px;
-}
-.contact-container i { margin: 0px 5px;}
 
-h1.heading {
-	font-size: 25px; 
-	font-weight: 100;
-	margin-left: 80px;
-}
-.lawyers-container {
-	width: 90%;
-	display: block;
-	margin: 0 auto;
-}
-.lawyers-container h1 {
-    margin: 20px 5px;
-	font-size: 42px;
-	font-weight: 700;
-	color: #144053;
-}
-.lawyer	{ 
-	display: flex;
-	justify-content: space-between;
-}
-.lawyer-details {
-    width: 39%;
-	display: flex;
-	flex-direction: row;
-	// align-items: flex-start;
-	padding-top: 20px;
-}
-.lawyer-details p { margin: 15px; }
-span.letter { color: #abb5b9; }
-.lawyers-container hr { color: #cad1d4; }
-.lawyer.last { margin-bottom: 60px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #footer {
 	position: relative;
 	bottom: 0;
 	width: 100%;
-	padding: 30px 0px 20px 0px;
-	height: 130px;
+	padding: 60px 0px 20px 0px;
+	height: auto;
 	background-color: #144053;
 	color: #fff;
 }
 .footer-top {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
     width: 1100px;
     margin: 0 auto 20px;
+    text-align: center;
 }
-.footer-top h1 { font-size: 20px; }
 .footer-top p { 
 	font-size: 16px;
 	font-weight: 100; 
 	letter-spacing: 1px;
+	margin: 7px 0;
 }
-.footer-top p.mobile { display: none; }
-
+.twitter-btn-footer {
+	position: absolute;
+	width: initial;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	top: 100px;
+}
+.twitter-btn-footer p {
+	margin: 0;
+	padding: 0 0 0 5px;
+	align-self: flex-end;
+}
 .footer-bottom	{
 	display: flex;
 	justify-content: space-between;
@@ -255,7 +292,6 @@ span.letter { color: #abb5b9; }
 .footer-bottom p { 
 	font-size: 14px;
 	font-weight: 200;
-
 }
 
 @media only screen and (max-width: 1150px) {
