@@ -225,6 +225,40 @@ a {
 
 
 
+/*OUR LAWYERS PAGE*/
+.our-lawyers #hero {
+	background-color: #154154;
+	padding: 40px 100px;
+}
+.our-lawyers #hero h1 {
+	color: #fff;
+	font-size: 74px;
+	font-weight: 100;
+	margin: 0;
+}
+.our-lawyers #home-main h1 { margin-bottom: 60px; }
+.lawyer-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 75%;
+	margin: 0 auto 30px;
+}
+.lawyer {
+	text-align: center;
+	color: #4e5050;
+}
+#home-main .lawyer h1 { 
+	font-size: 23px; 
+	margin-bottom: 10px;
+}
+#home-main .lawyer p { 
+	font-size: 14px;
+	margin: 0;
+	font-weight: 100;
+}
+
+
 
 
 
