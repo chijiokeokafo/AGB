@@ -449,8 +449,54 @@ a {
 	}
 }
 
-@media only screen and (max-width: 450px) {
-	
+@media (max-width: 1200px) {
+  #nav { width: 100%; }
+
+  ul.nav-container { padding: 0; }
+  ul.nav-container li { margin: 0; }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  	#nav { 
+  		height: auto; 
+  		display: block;
+  	}
+  	.nav-container {
+  	    position: absolute;
+          display: block;
+          margin: 0 0px 10px 10px;
+          z-index: 1000;
+          top: 0;
+          right: 0;
+          padding: 10px 0;
+          height: 181px;
+          background-color: #cad1d4;
+          width: 0px;
+          opacity: 1;
+          overflow-x: hidden;
+  	    transition: all 0.25s ease-in;
+  	}
+  	.nav-container li {
+  		height: 19%;
+  		padding-top: 13px; 
+  		border-bottom: 1px solid #144053;
+  	}
+  	#nav img {
+  	    margin: 20px auto;
+  	    display: block;
+  		width: 250px;
+  	}
+  	div#mobile-nav-button {
+  	  display: block;
+  	  text-align: left;
+  	  padding: 0 0px 20px 20px;
+  	  font-size: 200%;
+  	}
+  	.nav-open { width: 360px; }
+}
+
+@media (max-width: 765px){
+  
 }
 
 

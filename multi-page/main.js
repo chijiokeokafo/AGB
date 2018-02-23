@@ -5,7 +5,7 @@ $(document).ready(function(){
       margin:0,
       nav:false,
       autoplay:true,
-      autoplayTimeout:5000,
+      autoplayTimeout:1000,
       autoplayHoverPause:false,
       responsive:{
           0:{
@@ -27,15 +27,15 @@ $(document).ready(function(){
       
   });
 
-  $("ul.nav-container").find("a").click(function(e) {
-      e.preventDefault();
-      var section = $(this).attr("href");
-      $("html, body").animate({
-          scrollTop: $(section).offset().top
-      });
+  // $("ul.nav-container").find("a").click(function(e) {
+  //     e.preventDefault();
+  //     var section = $(this).attr("href");
+  //     $("html, body").animate({
+  //         scrollTop: $(section).offset().top
+  //     });
 
-      $(".nav-container").toggleClass("nav-open");
-  });
+  //     $(".nav-container").toggleClass("nav-open");
+  // });
 
 });
 
