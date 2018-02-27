@@ -1,7 +1,7 @@
 
 body {
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1600px;
 	margin: 0 auto;
 	overflow-x: hidden;
 	/*margin: 0;*/
@@ -89,7 +89,7 @@ a {
 
 #hero { 
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1600px;
 	box-sizing: border-box;
 }
 
@@ -137,6 +137,11 @@ a {
 	color: #fff;
 	margin-top: 20px;
 	letter-spacing: 2px;
+}
+.owl-carousel.owl-loaded { height: 438px; }
+.owl-dots {
+	position: relative;
+	top: -60px;
 }
 
 
@@ -368,7 +373,10 @@ ul.notable-list li a:before {
 .address {
 	text-align: left;
 }
-.address p { line-height: 20px; }
+.address p { 
+	line-height: 20px; 
+	margin-top: 0;
+}
 
 
 
