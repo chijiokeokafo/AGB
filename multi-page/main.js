@@ -6,7 +6,7 @@ $(document).ready(function(){
     dots:true,
     nav:false,
     autoplay:true,
-    autoplayTimeout:6000,
+    autoplayTimeout:60000,
     autoplayHoverPause:false,
     responsive:{
       0:{
@@ -26,8 +26,8 @@ $(document).ready(function(){
     $(".notable-cases").fadeOut();
     setTimeout( function () {
       $("#commercial").fadeIn();
-      $("#regulatory-btn, #public-btn, #tort-btn").css("color", "#144053");
-      $('#commercial-btn').css("color", "#949696");
+      $("#regulatory-btn, #public-btn, #tort-btn").removeClass("this-page");
+      $('#commercial-btn').addClass("this-page");
     }, 200)
   });
 
@@ -35,8 +35,8 @@ $(document).ready(function(){
     $(".notable-cases").fadeOut();
     setTimeout( function () {
       $("#regulatory").fadeIn();
-      $("#commercial-btn, #public-btn, #tort-btn").css("color", "#144053");
-      $('#regulatory-btn').css("color", "#949696");
+      $("#commercial-btn, #public-btn, #tort-btn").removeClass("this-page");
+      $('#regulatory-btn').addClass("this-page");
     }, 210)
   });
 
@@ -44,8 +44,8 @@ $(document).ready(function(){
     $(".notable-cases").fadeOut();
     setTimeout( function () {
       $("#public").fadeIn();
-      $("#commercial-btn, #regulatory-btn, #tort-btn").css("color", "#144053");
-      $('#public-btn').css("color", "#949696");
+      $("#commercial-btn, #regulatory-btn, #tort-btn").removeClass("this-page");
+      $('#public-btn').addClass("this-page");
     }, 220)
   });
 
@@ -53,8 +53,8 @@ $(document).ready(function(){
     $(".notable-cases").fadeOut();
     setTimeout( function () {
       $("#tort").fadeIn();
-      $("#commercial-btn, #public-btn, #regulatory-btn").css("color", "#144053");
-      $('#tort-btn').css("color", "#949696");
+      $("#commercial-btn, #public-btn, #regulatory-btn").removeClass("this-page");
+      $('#tort-btn').addClass("this-page");
     }, 230);
   });
   
@@ -77,6 +77,19 @@ $(document).ready(function(){
   // });
 
 });
+// var widgetCSS = "" +
+//     "body{font-family: 'Shadows Into Light', cursive;}" +
+//     ".timeline-Header{background-color: purple; border-top-left-radius: 10px; border-top-right-radius: 10px;}" +
+//     ".timeline-Header-title{color: white;}" +
+//     ".timeline-Tweet-text{color: red;}";
 
+// function paint(){
+//   var w = document.getElementById("twitter-widget-0").contentDocument;
+  
+//   var s = document.createElement("style");
+//   s.innerHTML = widgetCSS;
+//   s.type = "text/css";
+//   w.head.appendChild(s);
+// }
 
 

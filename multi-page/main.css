@@ -55,7 +55,7 @@ a {
 }
 #nav.stroke ul li a {
   position: relative;
-  padding: 0 10px 4px 10px;
+  padding: 0 0 4px 0;
 }
 #nav.stroke ul li a:after {
   position: absolute;
@@ -79,8 +79,8 @@ a {
  width: 100%;
 }
 .nav-container li {
-	margin: 0 15px;
-	font-size: 15.4px;
+	margin: 0 20px;
+	font-size: 14px;
 	font-weight: 600;
 	color: #144053;
 	text-decoration: none;
@@ -99,7 +99,7 @@ a {
 }
 #hero img.mobile-hero { display: none; }*/
 #hero .item.one {
-	background: url("images/hero-desktop-1.jpg");
+	background: url("images/hero-desktop-3.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -111,7 +111,7 @@ a {
 	background-size: cover;
 }
 #hero .item.three {
-	background: url("images/hero-desktop-3.jpg");
+	background: url("images/hero-desktop-1.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -142,6 +142,13 @@ a {
 .owl-dots {
 	position: relative;
 	top: -60px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #869791 !important; 
+}
+.owl-theme .owl-dots .owl-dot span {
+	background: #D6D6D6 !important;
 }
 
 
@@ -202,7 +209,7 @@ a {
 	font-weight: 500 !important;
 	font-size: 40px !important;
 }
-.block a {
+.block a.block-link {
 	width: 100%;
 	position: absolute;
 	left: 0;
@@ -293,6 +300,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0;
 }
 .notable-list li { color: #144053; }
 
@@ -303,7 +311,8 @@ ul.notable-list li a:before {
 }
 .notable-nav-container.stroke ul li a {
   position: relative;
-  padding: 0 10px 4px 10px;
+  padding: 0 0 4px 0;
+  font-weight: 300;
 }
 .notable-nav-container.stroke ul li a:after {
   position: absolute;
@@ -321,14 +330,17 @@ ul.notable-list li a:before {
   width: 100%;
 }
 .notable-list li {
-	margin: 0 30px;
+	margin: 0 15px;
 	font-size: 15.4px;
 	font-weight: 600;
 	color: #144053;
 	text-decoration: none;
 }
+.notable-nav-container.stroke ul li a.this-page:after {
+ width: 100%;
+}
 
-#commercial-btn { color: #949696; }
+/*#commercial-btn { color: #949696; }*/
 
 #regulatory, 
 #public, 
@@ -376,6 +388,7 @@ ul.notable-list li a:before {
 .address p { 
 	line-height: 20px; 
 	margin-top: 0;
+	color: #4e5050;
 }
 
 
