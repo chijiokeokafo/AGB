@@ -62,8 +62,16 @@ $(document).ready(function(){
   
 
   $("#mobile-nav-button").click(function(e) {
-      $(".nav-container").toggleClass("nav-open");
-      
+      $(".nav-container").toggleClass("nav-open");  
+  });
+
+    
+  $('#geoff-adair').click( function() {
+    $('.md-modal').addClass('md-show');
+  });
+  
+  $('.md-close').on('click', function() {
+    $('.md-modal').removeClass('md-show');
   });
 
   // $("ul.nav-container").find("a").click(function(e) {
