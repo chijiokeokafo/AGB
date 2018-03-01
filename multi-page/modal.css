@@ -23,6 +23,7 @@ button.md-close {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
+	overflow-y: auto;
 }
 .md-show {
 	visibility: visible;
