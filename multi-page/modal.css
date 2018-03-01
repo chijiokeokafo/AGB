@@ -17,7 +17,7 @@ button.md-close {
 	width: 90%;
 	/*max-width: 630px;*/
 	min-width: 320px;
-	height: auto;
+	height: 80vh;
 	z-index: 2000;
 	visibility: hidden;
 	-webkit-backface-visibility: hidden;
