@@ -11,13 +11,15 @@ button.md-close {
 .md-modal {
 	margin: auto;
 	position: fixed;
-	top: 100px;
+	top: 60px;
 	left: 0;
 	right: 0;
+	margin-bottom: 40px;
+	padding-bottom: 260px;
 	width: 90%;
-	/*max-width: 630px;*/
+	max-width: 1300px;
 	min-width: 320px;
-	height: 80vh;
+	height: 810px;
 	z-index: 2000;
 	visibility: hidden;
 	-webkit-backface-visibility: hidden;
@@ -58,6 +60,7 @@ button.md-close {
 }
 .md-show.md-effect-12 ~ .md-overlay {
 	background-color: rgba(0, 0, 0, 0.7);
+	/*background-color: transparent;*/
 }
 .md-effect-12 .md-content h3,
 .md-effect-12 .md-content {
@@ -70,8 +73,11 @@ button.md-close {
 	transform: scale(1);
 	opacity: 1;
 	background-color: #dce1e3;
-	padding: 20px;
-	overflow-y: scroll;
+	padding: 40px 60px 20px 40px;
+	/*overflow-y: scroll;
+	-webkit-box-shadow: 5px 3px 5px 0px rgba(173,161,173,1);
+	-moz-box-shadow: 5px 3px 5px 0px rgba(173,161,173,1);
+	box-shadow: 5px 3px 5px 0px rgba(173,161,173,1);*/
 }
 
 .lawyer-modal {
@@ -91,11 +97,54 @@ button.md-close {
 	font-weight: 100;
 }
 
+
+
+
+#hidingScrollBar{
+  overflow: hidden;
+}
+.hideScrollBar{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin-right: 14px;
+  padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+  padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
+}
+
+
+.left-side { width: 40%; }
+.left-side img { width: 250px; }
+.left-side p {
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 25px;
+}
+
 .green-section {
-	width: 30%;
+	width: 100%;
+	min-width: 250px;
 	display: block;
 	color: #fff;
 	background-color: #335969;
 	font-family: 'Lato', sans-serif;
 	padding: 40px 20px;
+	box-sizing: border-box;
 }
+.green-section p {
+	font-size: 16px;
+}
+
+.right-side {
+	width: 60%;
+	margin: 0 100px 0 50px;
+}
+
+.right-side h1 { font-weight: 100; }
+.right-side p {
+	font-weight: 100;
+	line-height: 28px;
+}
+
+.spacer { width: 100%; height: 50px; }
+
