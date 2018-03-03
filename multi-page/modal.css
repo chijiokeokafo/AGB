@@ -17,7 +17,7 @@ button.md-close {
 	margin-bottom: 40px;
 	padding-bottom: 260px;
 	width: 90%;
-	max-width: 1300px;
+	max-width: 950px;
 	min-width: 320px;
 	height: 600px;
 	z-index: 2000;
@@ -114,7 +114,10 @@ button.md-close {
 
 
 .left-side { width: 40%; }
-.left-side img { width: 250px; }
+.left-side img { 
+	width: 100%;
+	min-width: 250px; 
+}
 .left-side p {
 	font-size: 20px;
 	font-weight: 100;

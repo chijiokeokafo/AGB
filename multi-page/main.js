@@ -101,3 +101,5 @@ $(document).ready(function(){
 // }
 
 
+// **************** AIzaSyDlyT1TfJRuZqSSTROfPF3r0Xm6JXE4nx4 = GOOGLE MAPS API KEY*************
+
