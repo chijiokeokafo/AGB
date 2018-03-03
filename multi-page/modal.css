@@ -15,17 +15,23 @@ button.md-close {
 	left: 0;
 	right: 0;
 	margin-bottom: 40px;
-	padding-bottom: 260px;
+	padding-bottom: 0;
 	width: 90%;
 	max-width: 950px;
 	min-width: 320px;
-	height: 600px;
+	height: 650px;
+	max-height: 650px;
 	z-index: 2000;
 	visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
 	overflow-y: auto;
+	 /* Firefox 3.5 - 3.6 */
+	box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.6);
+	/*-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;*/
 }
 .md-show {
 	visibility: visible;
@@ -59,7 +65,7 @@ button.md-close {
 	transition: all 0.3s;
 }
 .md-show.md-effect-12 ~ .md-overlay {
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.2);
 	/*background-color: transparent;*/
 }
 .md-effect-12 .md-content h3,
@@ -78,6 +84,7 @@ button.md-close {
 	-webkit-box-shadow: 5px 3px 5px 0px rgba(173,161,173,1);
 	-moz-box-shadow: 5px 3px 5px 0px rgba(173,161,173,1);
 	box-shadow: 5px 3px 5px 0px rgba(173,161,173,1);*/
+
 }
 
 .lawyer-modal {
@@ -97,7 +104,10 @@ button.md-close {
 	font-weight: 100;
 }
 
-
+span.position {
+	font-size: 78%;
+	font-style: italic;
+}
 
 
 #hidingScrollBar{
@@ -119,7 +129,7 @@ button.md-close {
 	min-width: 250px; 
 }
 .left-side p {
-	font-size: 20px;
+	/*font-size: 18px;*/
 	font-weight: 100;
 	line-height: 25px;
 }
@@ -135,7 +145,7 @@ button.md-close {
 	box-sizing: border-box;
 }
 .green-section p {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .right-side {
