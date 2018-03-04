@@ -10,6 +10,7 @@ body {
 h1, p, li, a {
 	font-family: 'Lato', sans-serif;
 }
+p { text-align: center !important; }
 
 a {
 	text-decoration: none;
@@ -127,7 +128,7 @@ a {
 	padding-left: 10%;
 }
 #hero .item h1 {
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 400;
 	color: #fff;
 	margin: 0;
@@ -138,6 +139,7 @@ a {
 	color: #fff;
 	margin-top: 20px;
 	letter-spacing: 2px;
+	text-align: left !important;
 }
 .owl-carousel.owl-loaded { height: 275px; }
 .owl-dots {

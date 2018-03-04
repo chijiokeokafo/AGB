@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     
   $('#geoff-adair').click( function() {
-    $('.md-modal').addClass('md-show');
+    $('#geoff-modal').addClass('md-show');
   });
   
   $('.md-close').on('click', function() {
