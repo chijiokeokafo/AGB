@@ -8,8 +8,30 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<style>
-		p.timeline-Tweet-text { font-size: 40px; }
-		.timeline-Header.timeline-InformationCircle-widgetParent { display: none !important; }
+		blockquote.twitter-tweet {
+		  display: inline-block;
+		  padding: 16px;
+		  margin: 10px 0;
+		  max-width: 468px;
+		  border: #ddd 1px solid;
+		  border-top-color: #eee;
+		  border-bottom-color: #bbb;
+		  border-radius: 5px;
+		  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+		  font: bold 14px/18px Helvetica, Arial, sans-serif;
+		  color: #000;
+		}
+
+		blockquote.twitter-tweet p {
+		  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+		  margin: 0 5px 10px 0;
+		}
+
+		blockquote.twitter-tweet a[href^="https://twitter.com"] {
+		  font-weight: normal;
+		  color: #666;
+		  font-size: 12px;
+		}
 	</style>
 </head>
 <body>
@@ -46,10 +68,11 @@
 
 		<section id="home-main">
 			<h1>News</h1>
-			<p>What people are saying about us, what we’re saying about ourselves and what decision makers are saying about our clients:</p>
-
+			<div class="home-paragraph center">
+				<p>What people are saying about us, what we’re saying about ourselves and what decision makers are saying about our clients:</p>
+			</div>
 			<div class="home-paragraph">
-				<a class="twitter-timeline" href="https://twitter.com/AGBLLPLaw?ref_src=twsrc%5Etfw">Tweets by AGBLLPLaw</a>
+				<a class="twitter-timeline" href="https://twitter.com/AGBLLPLaw?ref_src=twsrc%5Etfw"></a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</section>
@@ -76,6 +99,18 @@
 	<script src="https://use.fontawesome.com/31f6331b17.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 	<script src="main.js"></script>
+	<script>
+		window.setTimeout(function(){
+		    $(".twitter-timeline").contents().find(".timeline-Tweet-text").css("font-size","16px");
+		    $(".twitter-timeline").contents().find(".timeline-Header").css("display","none");
+		    $(".twitter-timeline").contents().find(".timeline-TweetList-tweet.customisable-border, .timeline-Footer, .timeline-LoadMore").css("background-color","#dce1e3");
+		}, 100);
+		window.onload=function() { 
+		   $(".twitter-timeline").contents().find(".timeline-Tweet-text").css("font-size","16px");
+		   $(".twitter-timeline").contents().find(".timeline-Header").css("display","none");
+		   $(".twitter-timeline").contents().find(".timeline-TweetList-tweet.customisable-border, .timeline-Footer, .timeline-LoadMore").css("background-color","#dce1e3");
+		}; 
+	</script>
 	
 </body>
 </html>

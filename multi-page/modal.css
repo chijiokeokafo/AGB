@@ -1,11 +1,12 @@
 button.md-close {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 5px;
+	right: 5px;
 	display: block;
 	margin: 0 auto;
 	background: transparent;
 	border: none;
+	font-family: 'Lato', sans-serif;
 
 }
 .md-modal {
@@ -131,7 +132,7 @@ span.position {
 .left-side p {
 	/*font-size: 18px;*/
 	font-weight: 100;
-	line-height: 25px;
+	line-height: 23px;
 }
 
 .green-section {
@@ -141,13 +142,13 @@ span.position {
 	color: #fff;
 	background-color: #335969;
 	font-family: 'Lato', sans-serif;
-	padding: 40px 20px;
+	padding: 10px 20px;
 	box-sizing: border-box;
 }
 .green-section p {
 	font-size: 14px;
 }
-
+.green-section hr { color: rgba(255, 255, 255, 0.5); }
 .right-side {
 	width: 60%;
 	margin: 0 100px 0 50px;

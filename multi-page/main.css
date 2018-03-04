@@ -118,7 +118,7 @@ a {
 	background-size: cover;
 }
 #hero .item {
-	height: 437px;
+	height: 275px;
 	font-family: 'Lato';
 	display: flex;
 	flex-direction: column;
@@ -127,19 +127,19 @@ a {
 	padding-left: 10%;
 }
 #hero .item h1 {
-	font-size: 74px;
+	font-size: 60px;
 	font-weight: 400;
 	color: #fff;
 	margin: 0;
 }
 #hero .item p {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 400;
 	color: #fff;
 	margin-top: 20px;
 	letter-spacing: 2px;
 }
-.owl-carousel.owl-loaded { height: 438px; }
+.owl-carousel.owl-loaded { height: 275px; }
 .owl-dots {
 	position: relative;
 	top: -60px;
@@ -190,8 +190,8 @@ a {
 	justify-content: space-between;
 	margin: 0 auto;
 	padding-top: 60px;
-
 }
+
 
 .block {
 	width: 33%;
@@ -200,6 +200,7 @@ a {
 	background-color: #fff;
 	height: 200px;
 	position: relative;
+	transition: all 0.19s ease-in-out;
 }
 .block.middle {
 	margin: 10px 30px;
@@ -209,7 +210,14 @@ a {
 	padding: 30px;
 	font-weight: 500 !important;
 	font-size: 38px !important;
+	transition: all 0.23s ease-in-out;
 }
+#home-main .three-block .block:hover h1 {
+	color: #dce1e3;
+}
+/*#home-main .three-block .block:hover {
+	background-color: rgba(78, 80, 80, 0.25);
+}*/
 .block a.block-link {
 	width: 100%;
 	position: absolute;
@@ -246,6 +254,9 @@ a {
 	width: 25%; 
 	cursor: pointer;
 }
+
+/*NEWS*/
+.center p { text-align: center; }
 
 
 
