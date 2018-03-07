@@ -411,6 +411,18 @@ ul.notable-list li a:before {
 }
 #home-main .case h1.case-number { color: #4e5050; }
 
+h1.case-number a {
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  -ms-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease; 
+}
+h1.case-number a:hover {
+  border-bottom: 1px solid #335969;
+}
+
 #home-main .case .case-body {
 	text-align: left;
 	color: #4e5050;
@@ -438,8 +450,22 @@ ul.notable-list li a:before {
 }
 .address p { 
 	line-height: 20px; 
-	margin-top: 0;
+	margin: 0 0 5px 0 !important;
 	color: #4e5050;
+}
+.address a,
+.find-lawyer a {
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  -ms-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease; 
+
+}
+.address a:hover,
+.find-lawyer a {
+  border-bottom: 1px solid #335969;
 }
 
 #home-main .contact-container p { text-align: left !important; }
