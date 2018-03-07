@@ -19,17 +19,21 @@ a {
 
 .container { width: 100%; }
 
+/*NAV*/
+
 #nav { 
 	height: 155px; 
 	display: flex;
 	justify-content: space-around;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 1000px;
 }
 #nav img {
-	width: 215px;
+	width: 200px;
 	margin: 30px 50px;
+	position: relative;
+	left: 12px;
 }
 #nav .nav-container img {
 	width: 18px;
@@ -308,8 +312,20 @@ a {
 }
 #home-main .lawyer p { 
 	font-size: 14px;
-	margin: 0;
+	margin: 0 0 3px 0;
 	font-weight: 100;
+}
+
+.lawyer a {
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  -ms-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease; 
+}
+.lawyer a:hover {
+  border-bottom: 1px solid #335969;
 }
 
 
