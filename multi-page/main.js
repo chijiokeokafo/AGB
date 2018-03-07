@@ -66,13 +66,13 @@ $(document).ready(function(){
   });
 
     
-  $('#geoff-adair').click( function() {
-    $('#geoff-modal').addClass('md-show');
-  });
+  // $('#geoff-adair').click( function() {
+  //   $('#geoff-modal').addClass('md-show');
+  // });
   
-  $('.md-close').on('click', function() {
-    $('.md-modal').removeClass('md-show');
-  });
+  // $('.md-close').on('click', function() {
+  //   $('.md-modal').removeClass('md-show');
+  // });
 
   // $("ul.nav-container").find("a").click(function(e) {
   //     e.preventDefault();

@@ -1,7 +1,6 @@
 
 body {
 	width: 100%;
-	max-width: 1600px;
 	margin: 0 auto;
 	overflow-x: hidden;
 	/*margin: 0;*/
@@ -10,7 +9,7 @@ body {
 h1, p, li, a {
 	font-family: 'Lato', sans-serif;
 }
-p { text-align: center !important; }
+/*p { text-align: center !important; }*/
 
 a {
 	text-decoration: none;
@@ -18,10 +17,7 @@ a {
 }
 .hide { display: none; }
 
-.container {
-	width: 100%;
-	// max-width: 1250px;
-}
+.container { width: 100%; }
 
 #nav { 
 	height: 155px; 
@@ -91,7 +87,7 @@ a {
 
 #hero { 
 	width: 100%;
-	max-width: 1600px;
+	/*max-width: 1600px;*/
 	box-sizing: border-box;
 }
 
@@ -101,19 +97,19 @@ a {
 }
 #hero img.mobile-hero { display: none; }*/
 #hero .item.one {
-	background: url("images/hero-desktop-3.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-}
-#hero .item.two {
 	background: url("images/hero-desktop-2.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
-#hero .item.three {
+#hero .item.two {
 	background: url("images/hero-desktop-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#hero .item.three {
+	background: url("images/hero-desktop-2.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -134,7 +130,7 @@ a {
 	margin: 0;
 }
 #hero .item p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #fff;
 	margin-top: 20px;
@@ -159,7 +155,7 @@ a {
 
 #home-main {
 	width: 100%;
-	background-color: #dce1e3;
+	background-color: #e8edef;
 	text-align: center;
 	margin: 0;
 	padding: 60px 0; 
@@ -173,9 +169,10 @@ a {
 
 #home-main .home-paragraph {
 	width: 80%;
+	max-width: 1000px;
 	margin: 50px auto 0;
 	text-align: left; 
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: lighter;
 	color: #4e5050;
 	line-height: 28px;
@@ -187,6 +184,7 @@ a {
 
 .three-block {
 	width: 80%;
+	max-width: 1000px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -215,7 +213,7 @@ a {
 	transition: all 0.23s ease-in-out;
 }
 #home-main .three-block .block:hover h1 {
-	color: #dce1e3;
+	color: #e8edef;
 }
 /*#home-main .three-block .block:hover {
 	background-color: rgba(78, 80, 80, 0.25);
@@ -280,12 +278,30 @@ a {
 	flex-direction: row;
 	justify-content: space-around;
 	width: 75%;
+	max-width: 950px;
 	margin: 0 auto 30px;
 }
 .lawyer {
 	text-align: center;
 	color: #4e5050;
+	transition: all 0.23s ease-in-out;
+	padding-bottom: 10px;
 }
+.image { position: relative; }
+.image:after {
+    content:'\A';
+    width:100%; height:99%;
+    top:0; left:0;
+    background:rgba(20, 64, 83, 0.5);
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:hover:after {
+    opacity:1;
+}
+/*.lawyer:hover { background-color: rgba(58, 77, 86, 0.6); }*/
 #home-main .lawyer h1 { 
 	font-size: 21px; 
 	margin-bottom: 10px;
@@ -305,6 +321,7 @@ a {
 
 .notable-nav-container {
 	width: 80%;
+	max-width: 1000px;
 	margin: 30px auto 0;
 	display: block;
 	border-top: 2px solid #b8bdbe;
@@ -364,6 +381,7 @@ ul.notable-list li a:before {
 
 .notable-cases {
 	width: 80%;
+	max-width: 1000px;
 	margin: 60px auto 0;
 	display: block;
 }
@@ -396,6 +414,7 @@ ul.notable-list li a:before {
 	align-items: flex-start;
 	justify-content: space-between;
 	width: 80%;
+	max-width: 1000px;
 	margin: 0 auto 160px;
 }
 .address {
