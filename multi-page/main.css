@@ -412,16 +412,14 @@ ul.notable-list li a:before {
 #home-main .case h1.case-number { color: #4e5050; }
 
 h1.case-number a {
-  border-bottom: 1px solid rgba(192, 192, 192, 0);
-  -webkit-transition: border 0.3s ease;
-  -moz-transition: border 0.3s ease;
-  -ms-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease; 
-}
-h1.case-number a:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
   border-bottom: 1px solid #335969;
 }
+h1.case-number a:hover { color: #b8bdbe; }
 
 #home-main .case .case-body {
 	text-align: left;
