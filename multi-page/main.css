@@ -216,7 +216,7 @@ a {
 	font-size: 38px !important;
 	transition: all 0.23s ease-in-out;
 }
-#home-main .three-block .block:hover { background-color: #325969; }
+#home-main .three-block .block:hover { background-color: #144053; }
 #home-main .three-block .block:hover h1 {
 	color: #fff;
 }
@@ -228,7 +228,7 @@ a {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background-color: #325969;
+	background-color: #144053;
 	color: #fff;
 	padding: 6px 0;
 	font-weight: 100;
