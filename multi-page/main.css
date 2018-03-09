@@ -471,7 +471,7 @@ h1.case-number a:hover { color: #b8bdbe; }
 
 #home-main .contact-container p { text-align: left !important; }
 
-
+.map { width: 740px; }
 
 
 
@@ -653,6 +653,21 @@ h1.case-number a:hover { color: #b8bdbe; }
 		color: initial;
 	}
 
+	/*CONTACT*/
+
+	.contact-container { 
+		flex-direction: column;
+		width: 90%;
+		margin-bottom: 20px;
+
+	}
+	.address { margin-bottom: 20px; }
+
+	.map { 
+		width: 100%;
+		margin: 0 auto;
+	}
+
 
 	/*NOTABLE*/
 
@@ -665,6 +680,7 @@ h1.case-number a:hover { color: #b8bdbe; }
 		flex-direction: column; 
 		margin-bottom: 0px;
 	}
+	.image:hover:after { opacity: 0; }
 
 
 
