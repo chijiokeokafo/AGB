@@ -7,32 +7,6 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-	<style>
-		blockquote.twitter-tweet {
-		  display: inline-block;
-		  padding: 16px;
-		  margin: 10px 0;
-		  max-width: 468px;
-		  border: #ddd 1px solid;
-		  border-top-color: #eee;
-		  border-bottom-color: #bbb;
-		  border-radius: 5px;
-		  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-		  font: bold 14px/18px Helvetica, Arial, sans-serif;
-		  color: #000;
-		}
-
-		blockquote.twitter-tweet p {
-		  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
-		  margin: 0 5px 10px 0;
-		}
-
-		blockquote.twitter-tweet a[href^="https://twitter.com"] {
-		  font-weight: normal;
-		  color: #666;
-		  font-size: 12px;
-		}
-	</style>
 </head>
 <body>
 	<div class="container about">
@@ -55,7 +29,7 @@
 				<li><a href="news.html" class="this-page">NEWS</a></li>
 				<li><a href="notable-cases.html">NOTABLE&nbsp;CASES</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
-				<a href="https://twitter.com/agbllplaw?lang=en" target="_blank"><img src="images/twitter-nav.png" alt=""></a>
+				<a href="https://twitter.com/agbllplaw?lang=en" target="_blank" class="nav-twitter-icon"><img src="images/twitter-nav.png" alt=""></a>
 			</ul>
 		</section>
 
@@ -71,7 +45,7 @@
 			<div class="home-paragraph center">
 				<p>What people are saying about us, what we’re saying about ourselves and what decision makers are saying about our clients:</p>
 			</div>
-			<div class="home-paragraph">
+			<div class="home-paragraph" id="twitter-container">
 				<a class="twitter-timeline" href="https://twitter.com/AGBLLPLaw?ref_src=twsrc%5Etfw"></a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
@@ -93,6 +67,25 @@
 				<p>© 2018 AdairGoldblattBieberLLP</p>
 				<p>All Rights Reserved.</p>
 			</div>
+
+			<div class="footer-mobile">
+				<p>ADAIR GOLDBLATT BIEBER LLP</p>
+
+				<p>95 Wellington Street West <br />
+				Suite 1830<br />
+				Toronto ON M5J 2N7 </p>
+
+				<p>T: 416 499 9940<br />
+				F: 647 689 2059<br />
+				info@AGBLLP.com</p>
+				<br />
+				<div class="twitter-btn-footer">
+					<a href="https://twitter.com/agbllplaw?lang=en" target="_blank"><img src="images/twitter-footer.png" alt="">&nbsp;&nbsp;FOLLOW US</a>
+				</div>
+				<br />
+				<p>© 2018 AdairGoldblattBieberLLP</p>
+				<p>All Rights Reserved.</p>
+			</div>
 		</section>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -100,16 +93,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 	<script src="main.js"></script>
 	<script>
-		window.setTimeout(function(){
+		setTimeout(function(){
 		    $(".twitter-timeline").contents().find(".timeline-Tweet-text").css("font-size","16px");
 		    $(".twitter-timeline").contents().find(".timeline-Header").css("display","none");
 		    $(".twitter-timeline").contents().find(".timeline-TweetList-tweet.customisable-border, .timeline-Footer, .timeline-LoadMore").css("background-color","#e8edef");
-		}, 100);
-		window.onload=function() { 
-		   $(".twitter-timeline").contents().find(".timeline-Tweet-text").css("font-size","16px");
-		   $(".twitter-timeline").contents().find(".timeline-Header").css("display","none");
-		   $(".twitter-timeline").contents().find(".timeline-TweetList-tweet.customisable-border, .timeline-Footer, .timeline-LoadMore").css("background-color","#e8edef");
-		}; 
+		    $("#twitter-container").fadeIn();
+		}, 1000);
 	</script>
 	
 </body>
