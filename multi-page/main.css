@@ -531,6 +531,7 @@ h1.case-number a:hover { color: #b8bdbe; }
 .twitter-btn-footer a { font-size: 85%; }
 
 .footer-mobile { display: none; }
+.green-section.mobile-green { display: none; }
 
 @media (max-width: 1200px) {
   #nav { width: 100%; }
@@ -702,6 +703,9 @@ h1.case-number a:hover { color: #b8bdbe; }
 		width: 60%;
 	}
 	#home-main .contact-details h1 { margin-top: 0px; }
+
+	.green-section { display: none !important; }
+	.green-section.mobile-green { display: block !important; }
 
 
 
