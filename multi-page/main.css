@@ -534,6 +534,10 @@ h1.case-number a:hover { color: #b8bdbe; }
 .footer-mobile { display: none; }
 .green-section.mobile-green { display: none; }
 
+
+
+span.ital { font-style: italic; }
+
 @media (max-width: 1200px) {
   #nav { width: 100%; }
 
@@ -707,6 +711,7 @@ h1.case-number a:hover { color: #b8bdbe; }
 
 	.green-section { display: none !important; }
 	.green-section.mobile-green { display: block !important; }
+	.green-section.mobile-green p { font-weight: 100; }
 
 
 
