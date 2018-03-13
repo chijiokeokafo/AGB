@@ -412,6 +412,7 @@ ul.notable-list li a:before {
 	text-align: left;
 	margin: 0 0 10px 0;
 }
+#home-main .case h1.case-title { font-style: italic; }
 #home-main .case h1.case-number { color: #4e5050; }
 
 h1.case-number a {
