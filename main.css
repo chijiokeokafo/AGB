@@ -516,10 +516,12 @@ h1.case-number a:hover { color: #b8bdbe; }
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.15s linear;
 }
 .circle-bg img { 
 	width: 12px; 
 	height: 12px;
+	transition: all 0.15s linear;
 }
 .pleadings, 
 .record, 
@@ -528,8 +530,19 @@ h1.case-number a:hover { color: #b8bdbe; }
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	cursor: pointer;
+	width: 30%;
 }
+ 
+.circle-bg:hover { background-color: #cad1d4; }
+.point-down { transform: rotate(90deg); }
 
+.pleading-docs-container, 
+.record-docs-container,
+.reports-docs-container { display: none; }
+
+.class-inner ul { list-style: none; }
+.class-inner ul li { margin-bottom: 10px; }
 
 
 

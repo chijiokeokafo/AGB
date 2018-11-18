@@ -60,6 +60,20 @@ $(document).ready(function(){
   $("#mobile-nav-button").click(function(e) {
       $(".nav-container").toggleClass("nav-open");  
   });
+
+
+  $(".pleadings").click(function() {
+    $(".circle-bg img").toggleClass("point-down");
+    $(".pleading-docs-container").slideToggle();
+  })
+
+  $(".record").click(function() {
+    $(".record-docs-container").slideToggle();
+  })
+
+  $(".reports").click(function() {
+    $(".reports-docs-container").slideToggle();
+  })
   
 });
 
