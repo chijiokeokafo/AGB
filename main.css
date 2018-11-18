@@ -614,26 +614,6 @@ span.ital { font-style: italic; }
   ul.nav-container li { margin: 0 10px; }
 }
 
-/*@media (max-width: 1000px) and (min-width: 992px) {
-  #nav { width: 100%; }
-
-  ul.nav-container { padding: 0; }
-  ul.nav-container li { margin: 0 10px; }
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 991px) and (min-width: 768px) {
   	/*HOMEPAGE*/
   	#home-main .block {
@@ -641,6 +621,11 @@ span.ital { font-style: italic; }
   	}
   	#home-main .block h1 {
   		font-size: 24px !important;
+  	}
+
+  	.nav-container li {
+  		margin: 0 6px !important;
+  		font-size: 12px;
   	}
 
 
@@ -653,13 +638,6 @@ span.ital { font-style: italic; }
   	.footer-bottom { width: 90%; }
 	
 }
-
-
-
-
-
-
-
 
 @media (max-width: 767px){
   	/*#NAV*/
@@ -781,6 +759,14 @@ span.ital { font-style: italic; }
 	.green-section { display: none !important; }
 	.green-section.mobile-green { display: block !important; }
 	.green-section.mobile-green p { font-weight: 100; }
+
+
+	/*CLASS ACTIONS*/
+	#class-main h1 { width: 100%; }
+
+	.pleadings,
+	.record,
+	.reports { width: 80%; }
 
 
 
