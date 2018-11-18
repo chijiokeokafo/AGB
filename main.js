@@ -63,15 +63,17 @@ $(document).ready(function(){
 
 
   $(".pleadings").click(function() {
-    $(".circle-bg img").toggleClass("point-down");
+    $(".pleadings .circle-bg img").toggleClass("point-down");
     $(".pleading-docs-container").slideToggle();
   })
 
   $(".record").click(function() {
+    $(".record .circle-bg img").toggleClass("point-down");
     $(".record-docs-container").slideToggle();
   })
 
   $(".reports").click(function() {
+    $(".reports .circle-bg img").toggleClass("point-down");
     $(".reports-docs-container").slideToggle();
   })
   
