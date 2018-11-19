@@ -535,7 +535,11 @@ h1.case-number a:hover { color: #b8bdbe; }
 }
  
 .circle-bg:hover { background-color: #cad1d4; }
-.point-down { transform: rotate(90deg); }
+.point-down { 
+	transform: rotate(90deg);
+	position: relative;
+	right: 1px;
+}
 
 .pleading-docs-container, 
 .record-docs-container,
