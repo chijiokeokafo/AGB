@@ -330,7 +330,10 @@ a {
 .lawyer a:hover {
   border-bottom: 1px solid #335969;
 }
-
+img.lexpert-logo {
+	width: 130px !important;
+	margin-bottom: 6px !important;
+}
 
 
 
