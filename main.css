@@ -491,25 +491,41 @@ h1.case-number a:hover { color: #b8bdbe; }
 	margin: 0 auto;
 }
 #class-main h1 {
-	font-size: 29px;
-	font-weight: bold;
-	color: #000;
-    margin: 10px 0 0 0;
     padding-bottom: 8px;
     width: 45%;
     border-bottom: 2px solid #747677;
+    font-size: 32px;
+    font-weight: lighter;
+    color: #154154;
+    margin: 10px 0 0 0;
 }
 #class-main h2 {
 	font-size: 23px;
 	font-weight: bold;
 	color: #000;
 }
-#class-main p { font-size: 18px; }
-#class-main a { 
-	color: #000;
-	transition: all 0.125s linear;
+#class-main p { 
+	text-align: left; 
+	font-size: 16px;
+	font-weight: lighter;
+	color: #2b2e2e;
+	line-height: 28px;
+	letter-spacing: 1px; 
 }
-#class-main a:hover { color: #ccc; }
+#class-main a { 
+	color: #2b2e2e;
+	padding: 2px 0px;
+	border-bottom: 1px solid rgba(192, 192, 192, 0);
+    -webkit-transition: border 0.3s ease;
+    -moz-transition: border 0.3s ease;
+    -ms-transition: border 0.3s ease;
+    -o-transition: border 0.3s ease;
+    transition: border 0.3s ease;
+}
+#class-main a:hover { 
+	border-bottom: 1px solid #335969;
+
+}
 
 .circle-bg {
 	background-color: #184052;
@@ -549,7 +565,19 @@ h1.case-number a:hover { color: #b8bdbe; }
 .reports-docs-container { display: none; }
 
 .class-inner ul { list-style: none; }
-.class-inner ul li { margin-bottom: 10px; }
+.class-inner ul li { 
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url('images/pdf.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+	padding-left: 25px;
+}
+
 
 
 
@@ -774,6 +802,7 @@ span.ital { font-style: italic; }
 	.pleadings,
 	.record,
 	.reports { width: 80%; }
+	.class-inner ul li { background-size: 7%; }
 
 
 
