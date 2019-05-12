@@ -487,8 +487,9 @@ h1.case-number a:hover { color: #b8bdbe; }
 	padding: 60px 0; 
 }
 .class-inner {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 #class-main h1 {
     padding-bottom: 8px;
