@@ -553,13 +553,14 @@ h1.case-number a:hover { color: #b8bdbe; }
 }
 .pleadings, 
 .record, 
-.reports {
+.reports, 
+.motion {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 	cursor: pointer;
-	width: 30%;
+	width: 100%;
 }
  
 .circle-bg:hover { background-color: #cad1d4; }
@@ -571,7 +572,8 @@ h1.case-number a:hover { color: #b8bdbe; }
 
 .pleading-docs-container, 
 .record-docs-container,
-.reports-docs-container { display: none; }
+.reports-docs-container,
+.motion-docs-container { display: none; }
 
 .class-inner ul { list-style: none; }
 .class-inner ul li { 
@@ -814,7 +816,8 @@ span.ital { font-style: italic; }
 
 	.pleadings,
 	.record,
-	.reports { width: 80%; }
+	.reports,
+	.motion { width: 80%; }
 	.class-inner ul li { background-size: 7%; }
 
 

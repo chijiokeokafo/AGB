@@ -76,6 +76,11 @@ $(document).ready(function(){
     $(".reports .circle-bg img").toggleClass("point-down");
     $(".reports-docs-container").slideToggle();
   })
+
+  $(".motion").click(function() {
+    $(".motion .circle-bg img").toggleClass("point-down");
+    $(".motion-docs-container").slideToggle();
+  })
   
 });
 
