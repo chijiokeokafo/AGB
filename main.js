@@ -86,6 +86,11 @@ $(document).ready(function(){
     $(".amended .circle-bg img").toggleClass("point-down");
     $(".amended-docs-container").slideToggle();
   })
+
+  $(".certs").click(function() {
+    $(".certs .circle-bg img").toggleClass("point-down");
+    $(".certs-docs-container").slideToggle();
+  })
   
 });
 
