@@ -91,6 +91,11 @@ $(document).ready(function(){
     $(".certs .circle-bg img").toggleClass("point-down");
     $(".certs-docs-container").slideToggle();
   })
+
+  $(".court").click(function() {
+    $(".court .circle-bg img").toggleClass("point-down");
+    $(".court-docs-container").slideToggle();
+  })
   
 });
 
