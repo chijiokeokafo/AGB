@@ -96,6 +96,11 @@ $(document).ready(function(){
     $(".court .circle-bg img").toggleClass("point-down");
     $(".court-docs-container").slideToggle();
   })
+
+  $(".appeal").click(function() {
+    $(".appeal .circle-bg img").toggleClass("point-down");
+    $(".appeal-docs-container").slideToggle();
+  })
   
 });
 

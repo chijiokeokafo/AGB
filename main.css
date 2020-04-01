@@ -557,7 +557,8 @@ h1.case-number a:hover { color: #b8bdbe; }
 .motion,
 .amended,
 .certs,
-.court {
+.court,
+.appeal {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -579,7 +580,8 @@ h1.case-number a:hover { color: #b8bdbe; }
 .motion-docs-container,
 .amended-docs-container,
 .certs-docs-container,
-.court-docs-container { display: none; }
+.court-docs-container,
+.appeal-docs-container { display: none; }
 
 .class-inner ul { list-style: none; }
 .class-inner ul li { 
