@@ -487,26 +487,73 @@ h1.case-number a:hover { color: #b8bdbe; }
 
 
 /*CLASS ACTIONS PAGE*/
+.new-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
 #class-main {
 	width: 100%;
 	background-color: #e8edef;
 	text-align: left;
 	margin: 0;
 	padding: 60px 0; 
+	flex: 1;
 }
 .class-inner {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
 }
+.class-inner.class-actions {
+	margin-top: 50px;
+}
+.class-inner.class-actions a,
+.class-inner.class-actions a:hover {
+	display: flex !important;
+	padding: 0 !important;
+	border: none !important;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 40px;
+
+}
+.class-inner.class-actions p {
+	font-size: 22px !important;
+	margin: 0 0 0 10px;
+	border-bottom: 1px solid transparent;
+	transition: all 0.125s ease;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+.class-inner.class-actions p:hover {
+	border-bottom: 1px solid #2b2e2e;
+	cursor: pointer;
+}
+
 #class-main h1 {
     padding-bottom: 8px;
-    width: 45%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     border-bottom: 2px solid #747677;
     font-size: 32px;
     font-weight: lighter;
     color: #154154;
     margin: 10px 0 0 0;
+}
+#class-main h1.header {
+	padding-bottom: 0;
+	width: 100%;
+	text-align: center;
+	border-bottom: none;
+	font-size: 32px;
+	font-weight: lighter;
+	color: #154154;
+	margin: 10px 0 0 0;
 }
 #class-main h2 {
 	font-size: 23px;
@@ -558,7 +605,10 @@ h1.case-number a:hover { color: #b8bdbe; }
 .amended,
 .certs,
 .court,
-.appeal {
+.appeal,
+.karasik-pleadings,
+.karasik-motion,
+.karasik-court {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -581,7 +631,10 @@ h1.case-number a:hover { color: #b8bdbe; }
 .amended-docs-container,
 .certs-docs-container,
 .court-docs-container,
-.appeal-docs-container { display: none; }
+.appeal-docs-container,
+.karasik-pleading-docs-container,
+.karasik-motion-docs-container,
+.karasik-court-docs-container { display: none; }
 
 .class-inner ul { list-style: none; }
 .class-inner ul li { 
@@ -849,6 +902,63 @@ span.ital { font-style: italic; }
 }
 
 
+/*TERMS OF USE MODAL*/
+.terms-modal {
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
 
+.terms-modal:hover { color: #ccc; }
 
+.terms-of-use-modal {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.terms-of-use-modal .flexd {
+	display: flex !important;
+	justify-content: safe center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.terms-inner {
+	padding: 30px;
+	background-color: #fff;
+	width: 60%;
+	box-sizing: border-box;
+	position: relative;
+}
+.terms-inner p { line-height: 1.5; }
+.terms-inner .modal-close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+}
+
+.terms-inner .modal-close svg {
+	fill: #000;
+	transition: all 0.25s ease;
+	cursor: pointer;
+	width: 25px;
+}
+.terms-inner .modal-close svg:hover { fill: #154154; }
+
+@media (max-width: 767px){
+	.terms-inner { 
+		width: 90%;
+		margin: 0 auto;
+	}
+}
 

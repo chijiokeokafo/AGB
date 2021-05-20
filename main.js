@@ -67,6 +67,21 @@ $(document).ready(function(){
     $(".pleading-docs-container").slideToggle();
   })
 
+  $(".karasik-pleadings").click(function() {
+    $(".karasik-pleadings .circle-bg img").toggleClass("point-down");
+    $(".karasik-pleading-docs-container").slideToggle();
+  })
+
+  $(".karasik-motion").click(function() {
+    $(".karasik-motion .circle-bg img").toggleClass("point-down");
+    $(".karasik-motion-docs-container").slideToggle();
+  })
+
+  $(".karasik-court").click(function() {
+    $(".karasik-court .circle-bg img").toggleClass("point-down");
+    $(".karasik-court-docs-container").slideToggle();
+  })
+
   $(".record").click(function() {
     $(".record .circle-bg img").toggleClass("point-down");
     $(".record-docs-container").slideToggle();
@@ -100,6 +115,14 @@ $(document).ready(function(){
   $(".appeal").click(function() {
     $(".appeal .circle-bg img").toggleClass("point-down");
     $(".appeal-docs-container").slideToggle();
+  })
+
+  $(".terms-modal").click(function() {
+    $(".terms-of-use-modal").fadeIn("fast");
+  })
+
+  $(".modal-close").click(function() {
+    $(".terms-of-use-modal").fadeOut("fast");
   })
   
 });
